@@ -1,0 +1,46 @@
+﻿<Window x:Class="fail_manage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fail_manage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="354" Width="654">
+    <Grid>
+        <TextBox Name="TxtBox_Input" HorizontalAlignment="Left" Margin="10,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="634" Height="269" Grid.ColumnSpan="2"/>
+        <Label Content="Введите текст:" HorizontalAlignment="Left" Margin="32,38,0,0" VerticalAlignment="Top" Width="118" Grid.ColumnSpan="2"/>
+
+        <ComboBox HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="267" Height="23">
+            <ComboBoxItem IsSelected="True">
+                <TextBlock FontWeight="Bold">Файл</TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_Unic" Content="Открыть в формате Unicode" Click="Btn_Unic_Click" />
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_Win" Content="Открыть в формате Win1251" Click="Btn_Win_Click"/>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_RTF" Content="Открыть в формате RTF" Click="Btn_RTF_Click"/>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_BINAR" Content="Открыть бинарный файл" Click="Btn_BINAR_Click"/>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_SAVE_AS" Content="Сохранить как..." Click="Btn_SAVE_AS_Click"/>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_SAVE_BIN" Content="Сохранить как бинарный файл" Click="Btn_SAVE_BIN_Click"/>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button Name="Btn_PRINT_BIN" Content="Печать текстового документа" Click="Btn_PRINT_Click"/>
+            </ComboBoxItem>
+        </ComboBox>
+        
+
+
+
+
+
+    </Grid>
+</Window>
